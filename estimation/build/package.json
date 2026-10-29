@@ -1,0 +1,14 @@
+{
+  "name": "capital-house-documents",
+  "private": true,
+  "description": "Generates the Capital House client documents: estimate summary, detailed Scope of Work, client inputs document and input templates workbook.",
+  "scripts": {
+    "build:estimate": "node build_docs.js",
+    "build:inputs": "node build_inputs.js",
+    "build": "node build_docs.js && node build_inputs.js"
+  },
+  "dependencies": {
+    "docx": "^9.15.0",
+    "exceljs": "^4.4.0"
+  }
+}
